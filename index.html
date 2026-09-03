@@ -10,7 +10,6 @@ content="JUST KINDNESS WELFARE - Every act of kindness matters. Supporting child
 <title>JUST KINDNESS WELFARE ❤️</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -38,7 +37,7 @@ max-width:1150px;
 margin:auto;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 
 nav{
 position:sticky;
@@ -107,7 +106,7 @@ font-size:27px;
 cursor:pointer;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
 min-height:calc(100vh - 72px);
@@ -227,7 +226,7 @@ justify-content:center;
 font-size:23px;
 }
 
-/* ================= SECTION ================= */
+/* SECTION */
 
 section{
 padding:90px 0;
@@ -258,7 +257,7 @@ color:#667d90;
 font-size:16px;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT */
 
 .cards{
 display:grid;
@@ -295,7 +294,7 @@ font-size:15px;
 color:#657c8e;
 }
 
-/* ================= MISSION ================= */
+/* MISSION */
 
 .mission{
 background:#102a43;
@@ -328,7 +327,7 @@ font-size:22px;
 color:#d0deea;
 }
 
-/* ================= COUNTERS ================= */
+/* STATS */
 
 .stats{
 background:white;
@@ -357,7 +356,7 @@ color:#6a8091;
 font-weight:bold;
 }
 
-/* ================= GALLERY ================= */
+/* GALLERY */
 
 .gallery{
 display:grid;
@@ -372,13 +371,14 @@ object-fit:cover;
 border-radius:19px;
 cursor:pointer;
 transition:.3s;
+display:block;
 }
 
 .gallery img:hover{
 transform:scale(1.025);
 }
 
-/* ================= DONATE ================= */
+/* DONATE */
 
 .donate{
 background:linear-gradient(135deg,#eef8ff,#effbf7);
@@ -452,7 +452,7 @@ font-weight:900;
 word-break:break-word;
 }
 
-/* ================= TRUST ================= */
+/* TRUST */
 
 .trust-grid{
 display:grid;
@@ -476,7 +476,7 @@ margin-bottom:5px;
 color:#62798b;
 }
 
-/* ================= TESTIMONIAL ================= */
+/* TESTIMONIAL */
 
 .testimonial{
 background:#f1f7fc;
@@ -503,7 +503,7 @@ color:#526a7c;
 font-style:italic;
 }
 
-/* ================= FAQ ================= */
+/* FAQ */
 
 .faq{
 max-width:850px;
@@ -527,7 +527,7 @@ color:#657c8e;
 margin-top:12px;
 }
 
-/* ================= CONTACT ================= */
+/* CONTACT */
 
 .contact{
 background:white;
@@ -563,7 +563,7 @@ margin-bottom:4px;
 color:#647b8d;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
 background:#081c2e;
@@ -596,7 +596,7 @@ font-size:13px;
 color:#92a8ba;
 }
 
-/* ================= FLOATING DONATE ================= */
+/* FLOATING DONATE */
 
 .floating-donate{
 position:fixed;
@@ -611,7 +611,7 @@ font-weight:900;
 box-shadow:0 12px 30px #1677ff55;
 }
 
-/* ================= MODAL ================= */
+/* MODAL */
 
 .modal{
 position:fixed;
@@ -643,7 +643,7 @@ font-size:40px;
 cursor:pointer;
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:850px){
 
@@ -735,54 +735,40 @@ padding:12px 16px;
 }
 
 }
-
 </style>
 </head>
 
-
 <body>
 
-
-<!-- ================= NAVBAR ================= -->
+<!-- NAVBAR -->
 
 <nav>
-
 <div class="container nav">
 
 <a href="#home" class="logo">
-
 <div class="logo-icon">♥</div>
 
 <div>
 JUST <span>KINDNESS</span> WELFARE
 </div>
-
 </a>
 
-
 <div class="nav-links" id="navLinks">
-
 <a href="#about">About</a>
 <a href="#work">Our Work</a>
 <a href="#gallery">Gallery</a>
 <a href="#donate">Donate</a>
 <a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
-
 </div>
 
-
-<button class="menu-btn" onclick="toggleMenu()">
-☰
-</button>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 </div>
-
 </nav>
 
 
-
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -800,11 +786,8 @@ Together we can create a
 </h1>
 
 <p class="hero-text">
-
 JUST KINDNESS WELFARE works to support children and families who need a helping hand through education, essential supplies, food and compassionate community support.
-
 </p>
-
 
 <div class="hero-buttons">
 
@@ -824,7 +807,7 @@ See Our Work
 <div class="hero-photo">
 
 <img
-src="images/donation-1.jpg"
+src="donation-1.jpg"
 alt="JUST KINDNESS WELFARE community support"
 >
 
@@ -835,15 +818,9 @@ alt="JUST KINDNESS WELFARE community support"
 </div>
 
 <div>
-
 <strong>Every act of kindness matters.</strong>
-
 <br>
-
-<small>
-Together, we turn kindness into action.
-</small>
-
+<small>Together, we turn kindness into action.</small>
 </div>
 
 </div>
@@ -855,8 +832,7 @@ Together, we turn kindness into action.
 </section>
 
 
-
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -864,9 +840,7 @@ Together, we turn kindness into action.
 
 <div class="section-title">
 
-<div class="kicker">
-ABOUT US
-</div>
+<div class="kicker">ABOUT US</div>
 
 <h2>
 Kindness becomes powerful when we act.
@@ -881,51 +855,29 @@ We believe every child deserves care, dignity, learning opportunities and the su
 
 <div class="cards">
 
-
 <div class="card">
-
 <div class="card-icon">📚</div>
-
-<h3>
-Education Support
-</h3>
-
+<h3>Education Support</h3>
 <p>
 Helping children with educational materials, school supplies and resources that support learning.
 </p>
-
 </div>
 
-
 <div class="card">
-
 <div class="card-icon">🍲</div>
-
-<h3>
-Food & Essentials
-</h3>
-
+<h3>Food & Essentials</h3>
 <p>
 Supporting people in need through food, everyday essentials and useful donation drives.
 </p>
-
 </div>
 
-
 <div class="card">
-
 <div class="card-icon">🤝</div>
-
-<h3>
-Community Care
-</h3>
-
+<h3>Community Care</h3>
 <p>
 Bringing people together so that generosity can become practical help for those who need it.
 </p>
-
 </div>
-
 
 </div>
 
@@ -934,8 +886,7 @@ Bringing people together so that generosity can become practical help for those 
 </section>
 
 
-
-<!-- ================= MISSION ================= -->
+<!-- MISSION -->
 
 <section class="mission" id="work">
 
@@ -943,9 +894,7 @@ Bringing people together so that generosity can become practical help for those 
 
 <div class="section-title">
 
-<div class="kicker">
-OUR MISSION
-</div>
+<div class="kicker">OUR MISSION</div>
 
 <h2>
 Helping children feel supported, valued and hopeful.
@@ -962,9 +911,7 @@ Our mission is to encourage responsible giving and provide meaningful support wh
 
 <div class="mission-box">
 
-<h3>
-❤️ What We Believe
-</h3>
+<h3>❤️ What We Believe</h3>
 
 <p>
 Every child deserves kindness, dignity and an opportunity to grow. We believe communities become stronger when people come together to help one another.
@@ -975,9 +922,7 @@ Every child deserves kindness, dignity and an opportunity to grow. We believe co
 
 <div class="mission-box">
 
-<h3>
-🌱 Our Vision
-</h3>
+<h3>🌱 Our Vision</h3>
 
 <p>
 To build a caring community where children and families facing difficult circumstances can receive support, encouragement and hope for a better future.
@@ -992,49 +937,25 @@ To build a caring community where children and families facing difficult circums
 </section>
 
 
-
-<!-- ================= STATS ================= -->
+<!-- STATS -->
 
 <section class="stats">
 
 <div class="container stats-grid">
 
 <div class="stat">
-
-<div class="stat-number">
-♥
+<div class="stat-number">♥</div>
+<p>Kindness First</p>
 </div>
-
-<p>
-Kindness First
-</p>
-
-</div>
-
 
 <div class="stat">
-
-<div class="stat-number">
-∞
+<div class="stat-number">∞</div>
+<p>Hope Has No Limit</p>
 </div>
-
-<p>
-Hope Has No Limit
-</p>
-
-</div>
-
 
 <div class="stat">
-
-<div class="stat-number">
-🤝
-</div>
-
-<p>
-Community Together
-</p>
-
+<div class="stat-number">🤝</div>
+<p>Community Together</p>
 </div>
 
 </div>
@@ -1042,8 +963,7 @@ Community Together
 </section>
 
 
-
-<!-- ================= GALLERY ================= -->
+<!-- GALLERY -->
 
 <section id="gallery">
 
@@ -1051,9 +971,7 @@ Community Together
 
 <div class="section-title">
 
-<div class="kicker">
-OUR GALLERY
-</div>
+<div class="kicker">OUR GALLERY</div>
 
 <h2>
 Real moments of support.
@@ -1068,37 +986,53 @@ A glimpse of donation and community-support activities.
 
 <div class="gallery">
 
-<img src="images/donation-1.jpg"
+<img
+src="donation-1.jpg"
 onclick="openImage(this.src)"
-alt="Donation activity">
+alt="Donation activity"
+>
 
-<img src="images/donation-2.jpg"
+<img
+src="donation-2.jpg"
 onclick="openImage(this.src)"
-alt="Children receiving support">
+alt="Children receiving support"
+>
 
-<img src="images/donation-3.jpg"
+<img
+src="donation-3.jpg"
 onclick="openImage(this.src)"
-alt="Community activity">
+alt="Community activity"
+>
 
-<img src="images/donation-4.jpg"
+<img
+src="donation-4.jpg"
 onclick="openImage(this.src)"
-alt="Donation support">
+alt="Donation support"
+>
 
-<img src="images/donation-5.jpg"
+<img
+src="donation-5.jpg"
 onclick="openImage(this.src)"
-alt="Children support">
+alt="Children support"
+>
 
-<img src="images/donation-6.jpg"
+<img
+src="donation-6.jpg"
 onclick="openImage(this.src)"
-alt="Donation supplies">
+alt="Donation supplies"
+>
 
-<img src="images/donation-7.jpg"
+<img
+src="donation-7.jpg"
 onclick="openImage(this.src)"
-alt="Educational supplies">
+alt="Educational supplies"
+>
 
-<img src="images/donation-8.jpg"
+<img
+src="donation-8.jpg"
 onclick="openImage(this.src)"
-alt="Community support">
+alt="Community support"
+>
 
 </div>
 
@@ -1107,8 +1041,7 @@ alt="Community support">
 </section>
 
 
-
-<!-- ================= DONATE ================= -->
+<!-- DONATE -->
 
 <section class="donate" id="donate">
 
@@ -1125,9 +1058,7 @@ Your kindness can become someone's hope.
 </h2>
 
 <p>
-
 Your contribution can support children and families with educational resources, food and essential supplies according to current needs.
-
 </p>
 
 
@@ -1164,13 +1095,11 @@ Pay via UPI ❤️
 
 <div class="donate-box">
 
-<h3>
-Scan & Donate
-</h3>
+<h3>Scan & Donate</h3>
 
 <img
 class="qr"
-src="images/qr.jpg"
+src="qr.jpg"
 alt="JUST KINDNESS WELFARE donation QR"
 >
 
@@ -1180,9 +1109,7 @@ paytm.s1zg2d8@pty
 </div>
 
 <p style="margin-top:12px;color:#657c8e;font-size:13px">
-
 Please verify the recipient details displayed in your UPI app before completing payment.
-
 </p>
 
 </div>
@@ -1192,8 +1119,7 @@ Please verify the recipient details displayed in your UPI app before completing 
 </section>
 
 
-
-<!-- ================= TRUST ================= -->
+<!-- TRUST -->
 
 <section>
 
@@ -1218,58 +1144,25 @@ We believe supporters should have access to clear organization information.
 
 <div class="trust-grid">
 
-
 <div class="trust-card">
-
-<strong>
-Organization Name
-</strong>
-
-<span>
-JUST KINDNESS WELFARE
-</span>
-
+<strong>Organization Name</strong>
+<span>JUST KINDNESS WELFARE</span>
 </div>
 
-
 <div class="trust-card">
-
-<strong>
-Udyam Registration
-</strong>
-
-<span>
-UDYAM-RJ-17-0681301
-</span>
-
+<strong>Udyam Registration</strong>
+<span>UDYAM-RJ-17-0681301</span>
 </div>
 
-
 <div class="trust-card">
-
-<strong>
-Location
-</strong>
-
-<span>
-Narayan Vihar, Jaipur, Rajasthan
-</span>
-
+<strong>Location</strong>
+<span>Narayan Vihar, Jaipur, Rajasthan</span>
 </div>
 
-
 <div class="trust-card">
-
-<strong>
-Donation Method
-</strong>
-
-<span>
-UPI through the displayed QR code / UPI ID
-</span>
-
+<strong>Donation Method</strong>
+<span>UPI through the displayed QR code / UPI ID</span>
 </div>
-
 
 </div>
 
@@ -1278,8 +1171,7 @@ UPI through the displayed QR code / UPI ID
 </section>
 
 
-
-<!-- ================= TESTIMONIAL ================= -->
+<!-- TESTIMONIAL -->
 
 <section class="testimonial">
 
@@ -1287,9 +1179,7 @@ UPI through the displayed QR code / UPI ID
 
 <div class="testimonial-box">
 
-<div class="quote">
-“
-</div>
+<div class="quote">“</div>
 
 <p>
 “When people come together with kindness, even a small contribution can become a big reason for someone to smile.”
@@ -1297,9 +1187,7 @@ UPI through the displayed QR code / UPI ID
 
 <br>
 
-<strong>
-JUST KINDNESS WELFARE
-</strong>
+<strong>JUST KINDNESS WELFARE</strong>
 
 </div>
 
@@ -1308,8 +1196,7 @@ JUST KINDNESS WELFARE
 </section>
 
 
-
-<!-- ================= FAQ ================= -->
+<!-- FAQ -->
 
 <section id="faq">
 
@@ -1317,9 +1204,7 @@ JUST KINDNESS WELFARE
 
 <div class="section-title">
 
-<div class="kicker">
-FAQ
-</div>
+<div class="kicker">FAQ</div>
 
 <h2>
 Frequently asked questions.
@@ -1330,58 +1215,40 @@ Frequently asked questions.
 
 <div class="faq">
 
-
 <details>
-
-<summary>
-How can I donate?
-</summary>
+<summary>How can I donate?</summary>
 
 <p>
 You can scan the UPI QR code available in the Donate section or use the UPI payment button.
 </p>
-
 </details>
 
 
 <details>
-
-<summary>
-Where is JUST KINDNESS WELFARE located?
-</summary>
+<summary>Where is JUST KINDNESS WELFARE located?</summary>
 
 <p>
 Narayan Vihar, Jaipur, Rajasthan.
 </p>
-
 </details>
 
 
 <details>
-
-<summary>
-What kind of support does the organization provide?
-</summary>
+<summary>What kind of support does the organization provide?</summary>
 
 <p>
 Support may include educational resources, food, essential supplies and community assistance according to current needs and available resources.
 </p>
-
 </details>
 
 
 <details>
-
-<summary>
-How can I contact the organization?
-</summary>
+<summary>How can I contact the organization?</summary>
 
 <p>
 You can contact JUST KINDNESS WELFARE by phone/WhatsApp at 7426021404 or by email at justkindnesswelfare@gmail.com.
 </p>
-
 </details>
-
 
 </div>
 
@@ -1390,8 +1257,7 @@ You can contact JUST KINDNESS WELFARE by phone/WhatsApp at 7426021404 or by emai
 </section>
 
 
-
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
@@ -1399,18 +1265,14 @@ You can contact JUST KINDNESS WELFARE by phone/WhatsApp at 7426021404 or by emai
 
 <div>
 
-<div class="kicker">
-CONTACT US
-</div>
+<div class="kicker">CONTACT US</div>
 
 <h2>
 Want to support our work?
 </h2>
 
 <p style="color:#62798b">
-
 For information about our activities, donations or community support, get in touch with us.
-
 </p>
 
 
@@ -1440,54 +1302,23 @@ Email Us
 <div class="contact-info">
 
 <div class="contact-row">
-
-<strong>
-📍 Address
-</strong>
-
-<span>
-Narayan Vihar, Jaipur, Rajasthan
-</span>
-
+<strong>📍 Address</strong>
+<span>Narayan Vihar, Jaipur, Rajasthan</span>
 </div>
 
-
 <div class="contact-row">
-
-<strong>
-📞 Phone / WhatsApp
-</strong>
-
-<span>
-7426021404
-</span>
-
+<strong>📞 Phone / WhatsApp</strong>
+<span>7426021404</span>
 </div>
 
-
 <div class="contact-row">
-
-<strong>
-✉️ Email
-</strong>
-
-<span>
-justkindnesswelfare@gmail.com
-</span>
-
+<strong>✉️ Email</strong>
+<span>justkindnesswelfare@gmail.com</span>
 </div>
 
-
 <div class="contact-row">
-
-<strong>
-🆔 Udyam Registration
-</strong>
-
-<span>
-UDYAM-RJ-17-0681301
-</span>
-
+<strong>🆔 Udyam Registration</strong>
+<span>UDYAM-RJ-17-0681301</span>
 </div>
 
 </div>
@@ -1497,8 +1328,7 @@ UDYAM-RJ-17-0681301
 </section>
 
 
-
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1508,9 +1338,7 @@ UDYAM-RJ-17-0681301
 
 <div>
 
-<h3>
-JUST KINDNESS WELFARE
-</h3>
+<h3>JUST KINDNESS WELFARE</h3>
 
 <div class="footer-small">
 Every act of kindness matters. ❤️
@@ -1522,9 +1350,7 @@ Every act of kindness matters. ❤️
 <div class="footer-small">
 
 Narayan Vihar, Jaipur, Rajasthan<br>
-
 7426021404<br>
-
 justkindnesswelfare@gmail.com
 
 </div>
@@ -1544,27 +1370,22 @@ JUST KINDNESS WELFARE. All rights reserved.
 </footer>
 
 
-
-<!-- FLOATING DONATE BUTTON -->
+<!-- FLOATING DONATE -->
 
 <a href="#donate" class="floating-donate">
 ♥ Donate
 </a>
 
 
-
 <!-- IMAGE MODAL -->
 
 <div class="modal" id="modal" onclick="closeImage()">
 
-<div class="close">
-×
-</div>
+<div class="close">×</div>
 
 <img id="modalImage" alt="Gallery image">
 
 </div>
-
 
 
 <script>
@@ -1636,7 +1457,6 @@ window.location.href = upi;
 }
 
 </script>
-
 
 </body>
 </html>
