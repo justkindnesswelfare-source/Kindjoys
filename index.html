@@ -3,709 +3,751 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1677ff">
 
-<meta name="description" content="JUST KINDNESS WELFARE - Supporting children and families through kindness, education, food and essential supplies.">
-
-<title>JUST KINDNESS WELFARE ❤️</title>
+<title>JUST KINDNESS WELFARE</title>
 
 <style>
+:root{
+  --blue:#1677ff;
+  --dark:#102a43;
+  --green:#15966b;
+  --muted:#60758a;
+  --white:#fff;
+}
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 html{
-    scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f7fbff;
-    color:#102a43;
-    line-height:1.6;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--dark);
+  background:#f8fbff;
+  line-height:1.6;
 }
 
 a{
-    text-decoration:none;
+  text-decoration:none;
+  color:inherit;
 }
 
-.container{
-    width:92%;
-    max-width:1150px;
-    margin:auto;
+button,input{
+  font:inherit;
 }
 
 /* NAVBAR */
 
 nav{
-    position:sticky;
-    top:0;
-    z-index:999;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid #e6edf5;
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:#ffffffee;
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid #e5edf5;
 }
 
-.nav{
-    height:72px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+.navin{
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:min(1120px,92%);
+  margin:auto;
 }
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-weight:900;
-    font-size:15px;
-    color:#102a43;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
 }
 
-.logo-icon{
-    height:43px;
-    width:43px;
-    border-radius:14px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(135deg,#1677ff,#54c2ff);
-    color:white;
-    font-size:22px;
+.logoMark{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#1677ff,#56b7ff);
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-size:22px;
 }
 
 .logo span{
-    color:#1677ff;
+  color:var(--blue);
 }
 
-.nav-links{
-    display:flex;
-    gap:24px;
-    align-items:center;
+.links{
+  display:flex;
+  gap:24px;
+  font-size:14px;
+  font-weight:700;
+  color:#486176;
 }
 
-.nav-links a{
-    font-size:14px;
-    font-weight:bold;
-    color:#536b7e;
+.links a:hover{
+  color:var(--blue);
 }
 
-.nav-links a:hover{
-    color:#1677ff;
-}
-
-.menu-btn{
-    display:none;
-    border:none;
-    background:none;
-    font-size:28px;
-    cursor:pointer;
+.menu{
+  display:none;
+  border:0;
+  background:none;
+  font-size:26px;
 }
 
 /* HERO */
 
 .hero{
-    min-height:calc(100vh - 72px);
-    display:flex;
-    align-items:center;
-    background:
-    radial-gradient(circle at 90% 15%,#dff2ff 0,transparent 30%),
-    linear-gradient(180deg,#fff,#f1f8ff);
-    padding:70px 0;
+  padding:95px 0 85px;
+  background:
+  radial-gradient(circle at 90% 10%,#dff1ff 0,transparent 32%),
+  linear-gradient(#fff,#f2f9ff);
 }
 
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.05fr .95fr;
-    gap:55px;
-    align-items:center;
+.container{
+  width:min(1120px,92%);
+  margin:auto;
+}
+
+.heroGrid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:55px;
+  align-items:center;
 }
 
 .badge{
-    display:inline-block;
-    padding:9px 15px;
-    border-radius:50px;
-    background:#e7f8f2;
-    color:#087653;
-    font-size:13px;
-    font-weight:800;
-    margin-bottom:20px;
+  display:inline-block;
+  padding:8px 13px;
+  border-radius:999px;
+  background:#e8f7f2;
+  color:#087450;
+  font-weight:800;
+  font-size:13px;
+  margin-bottom:18px;
 }
 
-.hero h1{
-    font-size:clamp(43px,6vw,74px);
-    line-height:1.03;
-    letter-spacing:-3px;
-    margin-bottom:22px;
+h1{
+  font-size:clamp(42px,6vw,72px);
+  line-height:1.03;
+  letter-spacing:-2.5px;
+  margin-bottom:22px;
 }
 
-.hero h1 span{
-    color:#1677ff;
+h1 em{
+  font-style:normal;
+  color:var(--blue);
 }
 
-.hero-text{
-    font-size:18px;
-    color:#62788b;
-    max-width:620px;
+.hero p{
+  font-size:18px;
+  color:var(--muted);
 }
 
-.hero-buttons{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-    margin-top:28px;
+.actions{
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+  margin-top:30px;
 }
 
 .btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:15px 22px;
-    border-radius:14px;
-    font-weight:900;
-    transition:.25s;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 21px;
+  border-radius:14px;
+  font-weight:900;
+  border:1px solid #dce7f1;
+  cursor:pointer;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
+.primary{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+  box-shadow:0 12px 28px #1677ff3d;
 }
 
-.btn-primary{
-    background:#1677ff;
-    color:white;
-    box-shadow:0 12px 30px #1677ff3d;
+.secondary{
+  background:#fff;
 }
 
-.btn-light{
-    background:white;
-    color:#102a43;
-    border:1px solid #dce7f1;
+.heroCard{
+  background:#fff;
+  border-radius:30px;
+  padding:16px;
+  box-shadow:0 18px 55px #102a431f;
 }
 
-.hero-photo{
-    background:white;
-    padding:15px;
-    border-radius:30px;
-    box-shadow:0 20px 60px #102a4320;
+.heroCard img{
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  border-radius:22px;
+  display:block;
 }
 
-.hero-photo img{
-    width:100%;
-    height:470px;
-    object-fit:cover;
-    border-radius:22px;
-    display:block;
+.floating{
+  margin:-45px 18px 0;
+  background:#fff;
+  border-radius:18px;
+  padding:16px 18px;
+  position:relative;
+  box-shadow:0 12px 35px #102a4324;
+  display:flex;
+  align-items:center;
+  gap:13px;
 }
 
-.hero-tag{
-    background:white;
-    border-radius:18px;
-    padding:15px;
-    margin:-45px 20px 0;
-    position:relative;
-    box-shadow:0 12px 35px #102a4325;
-    display:flex;
-    align-items:center;
-    gap:13px;
-}
-
-.hero-heart{
-    height:45px;
-    width:45px;
-    border-radius:14px;
-    background:#fff0f2;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:23px;
+.heart{
+  width:45px;
+  height:45px;
+  border-radius:14px;
+  background:#fff0f2;
+  display:grid;
+  place-items:center;
+  font-size:22px;
 }
 
 /* SECTIONS */
 
 section{
-    padding:90px 0;
+  padding:85px 0;
 }
 
-.section-title{
-    max-width:750px;
-    margin-bottom:45px;
+.sectionHead{
+  max-width:720px;
+  margin-bottom:38px;
 }
 
 .kicker{
-    font-size:12px;
-    font-weight:900;
-    letter-spacing:2px;
-    color:#1677ff;
+  font-size:12px;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  font-weight:900;
+  color:var(--blue);
 }
 
-.section-title h2{
-    font-size:clamp(32px,4vw,51px);
-    line-height:1.1;
-    margin:10px 0 14px;
+h2{
+  font-size:clamp(31px,4vw,48px);
+  line-height:1.1;
+  margin:9px 0 13px;
 }
 
-.section-title p{
-    color:#667d90;
-    font-size:16px;
+.sectionHead p{
+  color:var(--muted);
 }
-
-/* CARDS */
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
 }
 
 .card{
-    background:white;
-    padding:30px;
-    border-radius:23px;
-    border:1px solid #e4edf5;
-    box-shadow:0 10px 35px #102a430b;
-    transition:.25s;
+  background:#fff;
+  border:1px solid #e6eef6;
+  border-radius:22px;
+  padding:27px;
+  box-shadow:0 8px 30px #102a430d;
 }
 
-.card:hover{
-    transform:translateY(-6px);
-}
-
-.card-icon{
-    font-size:32px;
-    margin-bottom:15px;
+.icon{
+  font-size:29px;
+  margin-bottom:12px;
 }
 
 .card h3{
-    font-size:20px;
-    margin-bottom:8px;
+  margin-bottom:8px;
 }
 
 .card p{
-    color:#657c8e;
+  color:var(--muted);
+  font-size:15px;
 }
 
 /* MISSION */
 
 .mission{
-    background:#102a43;
-    color:white;
+  background:var(--dark);
+  color:#fff;
 }
 
-.mission .section-title p{
-    color:#c7d7e5;
+.mission .sectionHead p{
+  color:#c7d6e5;
 }
 
-.mission-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
+.missionGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
 }
 
-.mission-box{
-    padding:32px;
-    border-radius:24px;
-    background:#ffffff0b;
-    border:1px solid #ffffff18;
+.missionBox{
+  border:1px solid #ffffff1f;
+  background:#ffffff0d;
+  border-radius:24px;
+  padding:30px;
 }
 
-.mission-box h3{
-    margin-bottom:10px;
-    font-size:22px;
-}
-
-.mission-box p{
-    color:#d0deea;
-}
-
-/* STATS */
-
-.stats{
-    background:white;
-    padding:55px 0;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    text-align:center;
-}
-
-.stat{
-    padding:20px;
-}
-
-.stat-number{
-    font-size:43px;
-    font-weight:900;
-    color:#1677ff;
-}
-
-.stat p{
-    color:#6a8091;
-    font-weight:bold;
+.missionBox p{
+  color:#d6e2ed;
 }
 
 /* GALLERY */
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
 }
 
 .gallery img{
-    width:100%;
-    height:245px;
-    object-fit:cover;
-    border-radius:19px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.gallery img:hover{
-    transform:scale(1.03);
+  width:100%;
+  height:235px;
+  object-fit:cover;
+  border-radius:18px;
+  cursor:pointer;
 }
 
 /* DONATE */
 
 .donate{
-    background:linear-gradient(135deg,#eef8ff,#effbf7);
+  background:linear-gradient(135deg,#eef8ff,#effbf7);
 }
 
-.donate-grid{
-    display:grid;
-    grid-template-columns:1fr .85fr;
-    gap:40px;
-    align-items:center;
+.donateGrid{
+  display:grid;
+  grid-template-columns:1fr .85fr;
+  gap:30px;
+  align-items:center;
 }
 
-.donate-text h2{
-    font-size:clamp(35px,5vw,57px);
-    line-height:1.05;
-    margin:10px 0 18px;
-}
-
-.donate-text p{
-    color:#61798c;
-    font-size:17px;
-}
-
-.amounts{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin:25px 0;
-}
-
-.amount{
-    border:1px solid #d5e1eb;
-    background:white;
-    padding:11px 17px;
-    border-radius:12px;
-    font-weight:900;
-    cursor:pointer;
-}
-
-.amount:hover{
-    border-color:#1677ff;
-    color:#1677ff;
-}
-
-.donate-box{
-    background:white;
-    border-radius:28px;
-    padding:30px;
-    box-shadow:0 20px 55px #102a431c;
-    text-align:center;
-}
-
-.donate-box h3{
-    margin-bottom:15px;
+.donateBox{
+  background:#fff;
+  border-radius:28px;
+  padding:30px;
+  box-shadow:0 18px 55px #102a431f;
 }
 
 .qr{
-    width:min(330px,100%);
-    border-radius:18px;
-    display:block;
-    margin:auto;
+  width:min(330px,100%);
+  display:block;
+  margin:5px auto 18px;
+  border-radius:18px;
 }
 
 .upi{
-    margin-top:18px;
-    background:#f4f8fc;
-    border:1px dashed #c5d6e4;
-    padding:13px;
-    border-radius:13px;
-    font-weight:900;
-    word-break:break-word;
+  background:#f4f8fc;
+  border:1px dashed #c9d7e4;
+  border-radius:14px;
+  padding:13px;
+  text-align:center;
+  font-weight:900;
+  word-break:break-all;
 }
 
-/* TRUST */
-
-.trust-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
+.note{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:13px;
+  text-align:center;
 }
 
-.trust-card{
-    background:white;
-    padding:25px;
-    border-radius:21px;
-    border:1px solid #e5edf5;
+/* INFO */
+
+.trans{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
 }
 
-.trust-card strong{
-    display:block;
-    margin-bottom:5px;
+.info{
+  background:#fff;
+  border-radius:22px;
+  padding:25px;
+  border:1px solid #e5edf5;
 }
 
-.trust-card span{
-    color:#62798b;
+.info strong{
+  display:block;
 }
 
-/* QUOTE */
-
-.testimonial{
-    background:#f1f7fc;
-}
-
-.testimonial-box{
-    max-width:850px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:26px;
-    text-align:center;
-}
-
-.quote{
-    font-size:40px;
-    color:#1677ff;
-}
-
-.testimonial-box p{
-    font-size:19px;
-    color:#526a7c;
-    font-style:italic;
-}
-
-/* FAQ */
-
-.faq{
-    max-width:850px;
-}
-
-details{
-    background:white;
-    border:1px solid #e3ebf3;
-    border-radius:15px;
-    padding:18px 20px;
-    margin-bottom:12px;
-}
-
-summary{
-    font-weight:900;
-    cursor:pointer;
-}
-
-details p{
-    color:#657c8e;
-    margin-top:12px;
+.info span{
+  color:var(--muted);
 }
 
 /* CONTACT */
 
 .contact{
-    background:white;
+  background:#fff;
 }
 
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
+.contactGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
 }
 
-.contact-info{
-    background:#f3f8fc;
-    padding:30px;
-    border-radius:23px;
+.contactCard{
+  background:#f5f9fd;
+  border-radius:22px;
+  padding:26px;
 }
 
-.contact-row{
-    padding:15px 0;
-    border-bottom:1px solid #dce7ef;
+.contactRow{
+  padding:13px 0;
+  border-bottom:1px solid #e1eaf2;
 }
 
-.contact-row:last-child{
-    border-bottom:0;
-}
-
-.contact-row strong{
-    display:block;
-    margin-bottom:4px;
-}
-
-.contact-row span{
-    color:#647b8d;
+.contactRow:last-child{
+  border:0;
 }
 
 /* FOOTER */
 
 footer{
-    background:#081c2e;
-    color:#d8e5ef;
-    padding:50px 0 25px;
+  background:#081c2e;
+  color:#d9e6f1;
+  padding:45px 0;
 }
 
-.footer-grid{
-    display:flex;
-    justify-content:space-between;
-    gap:30px;
-    flex-wrap:wrap;
+.footerGrid{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap;
 }
 
 footer h3{
-    color:white;
-    margin-bottom:7px;
+  color:#fff;
 }
 
-.footer-small{
-    font-size:13px;
-    color:#9db1c2;
+.small{
+  font-size:13px;
+  color:#9db1c2;
 }
 
 .copyright{
-    border-top:1px solid #ffffff18;
-    margin-top:30px;
-    padding-top:20px;
-    font-size:13px;
-    color:#92a8ba;
-}
-
-/* FLOATING BUTTON */
-
-.floating-donate{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    z-index:100;
-    background:#1677ff;
-    color:white;
-    padding:14px 19px;
-    border-radius:50px;
-    font-weight:900;
-    box-shadow:0 12px 30px #1677ff55;
+  margin-top:28px;
+  padding-top:20px;
+  border-top:1px solid #ffffff1a;
+  font-size:13px;
+  color:#9db1c2;
 }
 
 /* IMAGE MODAL */
 
 .modal{
-    position:fixed;
-    inset:0;
-    background:#020d18e8;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-    z-index:9999;
+  position:fixed;
+  inset:0;
+  background:#030f1ce0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:100;
+  padding:20px;
 }
 
 .modal.show{
-    display:flex;
+  display:flex;
 }
 
 .modal img{
-    max-width:95%;
-    max-height:90%;
-    border-radius:15px;
+  max-width:96vw;
+  max-height:88vh;
+  border-radius:15px;
 }
 
 .close{
-    position:fixed;
-    right:25px;
-    top:15px;
-    color:white;
-    font-size:40px;
-    cursor:pointer;
+  position:fixed;
+  right:22px;
+  top:16px;
+  color:#fff;
+  font-size:34px;
+  cursor:pointer;
+}
+
+/* PAYMENT MODAL */
+
+.payModal{
+  position:fixed;
+  inset:0;
+  background:rgba(3,15,28,.78);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:200;
+  padding:16px;
+}
+
+.payModal.show{
+  display:flex;
+}
+
+.payPanel{
+  width:min(520px,100%);
+  max-height:92vh;
+  overflow:auto;
+  background:#fff;
+  border-radius:28px;
+  padding:22px;
+  box-shadow:0 25px 80px #0008;
+  position:relative;
+}
+
+.payClose{
+  position:absolute;
+  right:16px;
+  top:10px;
+  border:0;
+  background:#f1f5f9;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  font-size:24px;
+  cursor:pointer;
+}
+
+.payTitle{
+  font-size:25px;
+  font-weight:900;
+}
+
+.paySub{
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+/* AMOUNT */
+
+.amountBox{
+  background:#f5f8fc;
+  border:1px solid #e0e8f0;
+  border-radius:16px;
+  padding:12px 15px;
+  margin-bottom:16px;
+}
+
+.amountBox label{
+  font-size:12px;
+  font-weight:800;
+  color:#60758a;
+}
+
+.amountRow{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+
+.amountRow span{
+  font-size:28px;
+  font-weight:900;
+}
+
+.amountRow input{
+  border:0;
+  background:transparent;
+  outline:0;
+  font-size:28px;
+  font-weight:900;
+  width:100%;
+}
+
+/* PAYMENT METHODS */
+
+.payMethodsTitle{
+  font-size:15px;
+  font-weight:900;
+  margin:14px 0 10px;
+}
+
+.method{
+  width:100%;
+  border:1px solid #e3eaf1;
+  background:#f8fafc;
+  border-radius:16px;
+  padding:13px 14px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:9px 0;
+  cursor:pointer;
+  text-align:left;
+}
+
+.method:hover{
+  border-color:#9cc4ff;
+  background:#f0f7ff;
+}
+
+.appIcon{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-weight:900;
+  font-size:18px;
+}
+
+.paytm{
+  background:#00baf2;
+}
+
+.phonepe{
+  background:#673ab7;
+}
+
+.gpay{
+  background:#1a73e8;
+}
+
+.upiicon{
+  background:#15966b;
+}
+
+.methodText strong{
+  display:block;
+  font-size:16px;
+}
+
+.methodText span{
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* QR PAYMENT */
+
+.qrArea{
+  display:none;
+  text-align:center;
+  border-top:1px solid #e7edf3;
+  margin-top:18px;
+  padding-top:18px;
+}
+
+.qrArea.show{
+  display:block;
+}
+
+.qrPay{
+  width:min(310px,88vw);
+  display:block;
+  margin:10px auto 12px;
+  border-radius:16px;
+  border:1px solid #e1e8ef;
+}
+
+.qrHint{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.qrButtons{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.tinyBtn{
+  border:1px solid #dce5ee;
+  background:#fff;
+  border-radius:12px;
+  padding:10px 13px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.copyLine{
+  background:#f4f8fc;
+  border:1px dashed #c9d7e4;
+  border-radius:12px;
+  padding:10px;
+  font-weight:900;
+  word-break:break-all;
+  margin:10px 0;
+}
+
+.warning{
+  font-size:12px;
+  color:#9a5a00;
+  background:#fff7e8;
+  border-radius:12px;
+  padding:10px;
+  margin-top:14px;
+}
+
+.status{
+  display:none;
+  text-align:center;
+  margin-top:12px;
+  font-size:13px;
+  font-weight:700;
+  color:#60758a;
+}
+
+.status.show{
+  display:block;
 }
 
 /* MOBILE */
 
-@media(max-width:850px){
+@media(max-width:820px){
 
-    .nav-links{
-        display:none;
-        position:absolute;
-        top:72px;
-        left:0;
-        width:100%;
-        background:white;
-        padding:20px;
-        flex-direction:column;
-        gap:18px;
-        box-shadow:0 10px 30px #00000012;
-    }
+  .links{
+    display:none;
+  }
 
-    .nav-links.open{
-        display:flex;
-    }
+  .menu{
+    display:block;
+  }
 
-    .menu-btn{
-        display:block;
-    }
+  .hero{
+    padding:65px 0;
+  }
 
-    .hero-grid,
-    .donate-grid,
-    .mission-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
+  .heroGrid,
+  .donateGrid,
+  .missionGrid,
+  .contactGrid{
+    grid-template-columns:1fr;
+  }
 
-    .cards{
-        grid-template-columns:1fr;
-    }
+  .heroCard img{
+    height:350px;
+  }
 
-    .gallery{
-        grid-template-columns:repeat(2,1fr);
-    }
+  .cards{
+    grid-template-columns:1fr;
+  }
 
-    .gallery img{
-        height:210px;
-    }
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-    .trust-grid{
-        grid-template-columns:1fr;
-    }
+  .gallery img{
+    height:210px;
+  }
 
-    .hero-photo img{
-        height:370px;
-    }
+  .trans{
+    grid-template-columns:1fr;
+  }
 }
-
-@media(max-width:500px){
-
-    .hero h1{
-        font-size:43px;
-        letter-spacing:-1.8px;
-    }
-
-    .stats-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gallery{
-        gap:9px;
-    }
-
-    .gallery img{
-        height:180px;
-    }
-
-}
-
 </style>
 </head>
 
@@ -714,23 +756,22 @@ footer h3{
 <!-- NAVBAR -->
 
 <nav>
-<div class="container nav">
+<div class="navin">
 
-<a href="#home" class="logo">
-<div class="logo-icon">♥</div>
+<a class="logo" href="#home">
+<div class="logoMark">♥</div>
 <div>JUST <span>KINDNESS</span> WELFARE</div>
 </a>
 
-<div class="nav-links" id="navLinks">
+<div class="links">
 <a href="#about">About</a>
 <a href="#work">Our Work</a>
 <a href="#gallery">Gallery</a>
 <a href="#donate">Donate</a>
-<a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
 </div>
 
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+<button class="menu" onclick="toggleMenu()">☰</button>
 
 </div>
 </nav>
@@ -738,468 +779,1142 @@ footer h3{
 
 <!-- HERO -->
 
-<section class="hero" id="home">
-<div class="container hero-grid">
+<main id="home">
+
+<section class="hero">
+
+<div class="container heroGrid">
 
 <div>
 
-<div class="badge">♥ KINDNESS • CARE • HOPE</div>
+<div class="badge">
+♥ Kindness • Care • Hope
+</div>
 
 <h1>
-Together we can create a
-<span>brighter tomorrow.</span>
+Small acts can create a
+<em>brighter tomorrow.</em>
 </h1>
 
-<p class="hero-text">
-JUST KINDNESS WELFARE works to support children and families who need a helping hand through education, essential supplies, food and compassionate community support.
+<p>
+JUST KINDNESS WELFARE works to support children and families who need a helping hand through educational resources, essential supplies, food and compassionate community support.
 </p>
 
-<div class="hero-buttons">
-<a href="#donate" class="btn btn-primary">Donate & Help ♥</a>
-<a href="#gallery" class="btn btn-light">See Our Work</a>
-</div>
+<div class="actions">
+
+<button class="btn primary" onclick="openPayment()">
+Donate & Help ♥
+</button>
+
+<a class="btn secondary" href="#gallery">
+See Our Work
+</a>
 
 </div>
 
-<div class="hero-photo">
+</div>
 
-<img src="donation-1.jpg" alt="JUST KINDNESS WELFARE community support">
 
-<div class="hero-tag">
-<div class="hero-heart">♥</div>
+<div class="heroCard">
+
+<img src="donation-1.jpg"
+alt="Community support activity">
+
+<div class="floating">
+
+<div class="heart">♥</div>
+
 <div>
-<strong>Every act of kindness matters.</strong><br>
-<small>Together, we turn kindness into action.</small>
-</div>
+<strong>Every contribution matters</strong>
+
+<div class="small">
+Together, we can turn kindness into action.
 </div>
 
 </div>
 
 </div>
+
+</div>
+
+</div>
+
 </section>
 
 
 <!-- ABOUT -->
 
 <section id="about">
+
 <div class="container">
 
-<div class="section-title">
-<div class="kicker">ABOUT US</div>
-<h2>Kindness becomes powerful when we act.</h2>
-<p>
-We believe every child deserves care, dignity, learning opportunities and the support needed to build a better future.
-</p>
+<div class="sectionHead">
+
+<div class="kicker">
+About Us
 </div>
+
+<h2>
+Kindness is most powerful when it becomes action.
+</h2>
+
+<p>
+We believe every child deserves access to care, learning resources and the basic support needed to grow with dignity and hope.
+</p>
+
+</div>
+
 
 <div class="cards">
 
 <div class="card">
-<div class="card-icon">📚</div>
-<h3>Education Support</h3>
-<p>Helping children with educational materials, school supplies and resources that support learning.</p>
+
+<div class="icon">📚</div>
+
+<h3>
+Education Support
+</h3>
+
+<p>
+Helping children with school-related resources and learning materials wherever support is needed.
+</p>
+
 </div>
+
 
 <div class="card">
-<div class="card-icon">🍲</div>
-<h3>Food & Essentials</h3>
-<p>Supporting people in need through food, everyday essentials and useful donation drives.</p>
+
+<div class="icon">🎁</div>
+
+<h3>
+Essential Supplies
+</h3>
+
+<p>
+Supporting communities with useful everyday items and child-focused supplies through donation drives.
+</p>
+
 </div>
+
 
 <div class="card">
-<div class="card-icon">🤝</div>
-<h3>Community Care</h3>
-<p>Bringing people together so that generosity can become practical help for those who need it.</p>
-</div>
+
+<div class="icon">🤝</div>
+
+<h3>
+Community Care
+</h3>
+
+<p>
+Working with people and communities to turn generosity into meaningful, practical help.
+</p>
 
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 
 <!-- MISSION -->
 
-<section class="mission" id="work">
+<section id="work" class="mission">
+
 <div class="container">
 
-<div class="section-title">
-<div class="kicker">OUR MISSION</div>
-<h2>Helping children feel supported, valued and hopeful.</h2>
+<div class="sectionHead">
+
+<div class="kicker">
+Our Mission
+</div>
+
+<h2>
+Helping children feel supported, valued and hopeful.
+</h2>
+
 <p>
-Our mission is to encourage responsible giving and provide meaningful support where it can make a real difference.
+Our aim is to make responsible giving simple and to direct support toward practical needs.
 </p>
+
 </div>
 
-<div class="mission-grid">
 
-<div class="mission-box">
-<h3>❤️ What We Believe</h3>
+<div class="missionGrid">
+
+<div class="missionBox">
+
+<h3>
+What we stand for
+</h3>
+
 <p>
-Every child deserves kindness, dignity and an opportunity to grow. We believe communities become stronger when people come together to help one another.
+Compassion, dignity, responsible giving, community participation and a commitment to making a positive difference in children's lives.
 </p>
+
 </div>
 
-<div class="mission-box">
-<h3>🌱 Our Vision</h3>
+
+<div class="missionBox">
+
+<h3>
+How support helps
+</h3>
+
 <p>
-To build a caring community where children and families facing difficult circumstances can receive support, encouragement and hope for a better future.
+Donations can help fund educational materials, food and essential supplies and community activities, based on current needs and available resources.
 </p>
-</div>
 
 </div>
 
 </div>
-</section>
-
-
-<!-- STATS -->
-
-<section class="stats">
-<div class="container stats-grid">
-
-<div class="stat">
-<div class="stat-number">♥</div>
-<p>Kindness First</p>
-</div>
-
-<div class="stat">
-<div class="stat-number">∞</div>
-<p>Hope Has No Limit</p>
-</div>
-
-<div class="stat">
-<div class="stat-number">🤝</div>
-<p>Community Together</p>
-</div>
 
 </div>
+
 </section>
 
 
 <!-- GALLERY -->
 
 <section id="gallery">
+
 <div class="container">
 
-<div class="section-title">
-<div class="kicker">OUR GALLERY</div>
-<h2>Real moments of support.</h2>
-<p>A glimpse of donation and community-support activities.</p>
+<div class="sectionHead">
+
+<div class="kicker">
+Gallery
 </div>
+
+<h2>
+Moments of giving and community support.
+</h2>
+
+<p>
+Photos from activities and donation efforts.
+</p>
+
+</div>
+
 
 <div class="gallery">
 
-<img src="donation-1.jpg" onclick="openImage(this.src)" alt="Donation activity">
+<img src="donation-1.jpg"
+alt="Community donation activity"
+onclick="openImg(this.src)">
 
-<img src="donation-2.jpg" onclick="openImage(this.src)" alt="Children receiving support">
+<img src="donation-2.jpg"
+alt="Children in a learning environment"
+onclick="openImg(this.src)">
 
-<img src="donation-3.jpg" onclick="openImage(this.src)" alt="Community support">
+<img src="donation-3.jpg"
+alt="Children participating in an activity"
+onclick="openImg(this.src)">
 
-<img src="donation-4.jpg" onclick="openImage(this.src)" alt="Donation support">
+<img src="donation-4.jpg"
+alt="Community members receiving supplies"
+onclick="openImg(this.src)">
 
-<img src="donation-5.jpg" onclick="openImage(this.src)" alt="Children support">
+<img src="donation-5.jpg"
+alt="Children with educational activity materials"
+onclick="openImg(this.src)">
 
-<img src="donation-6.jpg" onclick="openImage(this.src)" alt="Donation supplies">
+<img src="donation-6.jpg"
+alt="Donation supplies"
+onclick="openImg(this.src)">
 
-<img src="donation-7.jpg" onclick="openImage(this.src)" alt="Educational supplies">
+<img src="donation-7.jpg"
+alt="School supplies"
+onclick="openImg(this.src)">
 
-<img src="donation-8.jpg" onclick="openImage(this.src)" alt="Community support">
+<img src="donation-8.jpg"
+alt="Community support supplies"
+onclick="openImg(this.src)">
 
 </div>
 
 </div>
+
 </section>
 
 
 <!-- DONATE -->
 
-<section class="donate" id="donate">
-<div class="container donate-grid">
+<section id="donate" class="donate">
 
-<div class="donate-text">
+<div class="container donateGrid">
 
-<div class="kicker">MAKE A DIFFERENCE</div>
+<div>
 
-<h2>Your kindness can become someone's hope.</h2>
+<div class="kicker">
+Support Our Work
+</div>
 
-<p>
-Your contribution can support children and families with educational resources, food and essential supplies according to current needs.
+<h2>
+Your kindness can become someone's hope.
+</h2>
+
+<p style="color:var(--muted);font-size:17px">
+
+Choose a UPI app for direct payment,
+or use the QR code when you want to pay
+from another phone.
+
 </p>
 
-<div class="amounts">
+<div class="actions">
 
-<button class="amount" onclick="donateAmount(100)">₹100</button>
+<button class="btn primary"
+onclick="openPayment()">
 
-<button class="amount" onclick="donateAmount(500)">₹500</button>
+Pay Now
 
-<button class="amount" onclick="donateAmount(1000)">₹1,000</button>
-
-<button class="amount" onclick="donateAmount(2000)">₹2,000</button>
+</button>
 
 </div>
-
-<a href="upi://pay?pa=7426021404@ptsbi&pn=JUST%20KINDNESS%20WELFARE&cu=INR" class="btn btn-primary">
-Pay via UPI ❤️
-</a>
 
 </div>
 
 
-<div class="donate-box">
+<div class="donateBox">
 
-<h3>Scan & Donate</h3>
-
-<img class="qr" src="qr.jpg" alt="JUST KINDNESS WELFARE donation QR">
+<img class="qr"
+src="qr.png"
+alt="UPI donation QR code">
 
 <div class="upi">
-UPI ID:<br>
-7426021404@ptsbi
+UPI ID: 7426021404@ptsbi
 </div>
 
-<p style="margin-top:12px;color:#657c8e;font-size:13px">
-Please verify the recipient details displayed in your UPI app before completing payment.
+<p class="note">
+
+Scan with any supported UPI app.
+Please verify the recipient name before paying.
+
 </p>
 
 </div>
 
 </div>
+
 </section>
 
 
 <!-- TRUST -->
 
 <section>
+
 <div class="container">
 
-<div class="section-title">
-<div class="kicker">TRUST & INFORMATION</div>
-<h2>Information for our supporters.</h2>
-<p>We believe supporters should have access to clear organization information.</p>
+<div class="sectionHead">
+
+<div class="kicker">
+Trust & Information
 </div>
 
-<div class="trust-grid">
-
-<div class="trust-card">
-<strong>Organization Name</strong>
-<span>JUST KINDNESS WELFARE</span>
-</div>
-
-<div class="trust-card">
-<strong>Udyam Registration</strong>
-<span>UDYAM-RJ-17-0681301</span>
-</div>
-
-<div class="trust-card">
-<strong>Location</strong>
-<span>Narayan Vihar, Jaipur, Rajasthan</span>
-</div>
-
-<div class="trust-card">
-<strong>Donation Method</strong>
-<span>UPI through the displayed QR code / UPI ID</span>
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- QUOTE -->
-
-<section class="testimonial">
-<div class="container">
-
-<div class="testimonial-box">
-
-<div class="quote">“</div>
+<h2>
+Clear information for supporters.
+</h2>
 
 <p>
-When people come together with kindness, even a small contribution can become a big reason for someone to smile.
+Public information shown here is based on the details provided for this website.
 </p>
 
-<br>
+</div>
 
-<strong>JUST KINDNESS WELFARE</strong>
+
+<div class="trans">
+
+<div class="info">
+
+<strong>
+Organization Name
+</strong>
+
+<span>
+JUST KINDNESS WELFARE
+</span>
+
+</div>
+
+
+<div class="info">
+
+<strong>
+Udyam Registration
+</strong>
+
+<span>
+UDYAM-RJ-17-0681301
+</span>
+
+</div>
+
+
+<div class="info">
+
+<strong>
+Location
+</strong>
+
+<span>
+Narayan Vihar, Jaipur, Rajasthan
+</span>
+
+</div>
+
+
+<div class="info">
+
+<strong>
+Donation Method
+</strong>
+
+<span>
+UPI donation via QR code / UPI ID
+</span>
 
 </div>
 
 </div>
-</section>
-
-
-<!-- FAQ -->
-
-<section id="faq">
-<div class="container">
-
-<div class="section-title">
-<div class="kicker">FAQ</div>
-<h2>Frequently asked questions.</h2>
-</div>
-
-<div class="faq">
-
-<details>
-<summary>How can I donate?</summary>
-<p>You can scan the UPI QR code available in the Donate section or use the UPI payment button.</p>
-</details>
-
-<details>
-<summary>Where is JUST KINDNESS WELFARE located?</summary>
-<p>Narayan Vihar, Jaipur, Rajasthan.</p>
-</details>
-
-<details>
-<summary>What kind of support does the organization provide?</summary>
-<p>Support may include educational resources, food, essential supplies and community assistance according to current needs and available resources.</p>
-</details>
-
-<details>
-<summary>How can I contact the organization?</summary>
-<p>You can contact JUST KINDNESS WELFARE by phone or WhatsApp at 7426021404 or by email at justkindnesswelfare@gmail.com.</p>
-</details>
 
 </div>
 
-</div>
 </section>
 
 
 <!-- CONTACT -->
 
-<section class="contact" id="contact">
-<div class="container contact-grid">
+<section id="contact" class="contact">
 
-<div>
+<div class="container">
 
-<div class="kicker">CONTACT US</div>
+<div class="sectionHead">
 
-<h2>Want to support our work?</h2>
+<div class="kicker">
+Contact
+</div>
 
-<p style="color:#62798b">
-For information about our activities, donations or community support, get in touch with us.
+<h2>
+Want to support or know more?
+</h2>
+
+<p>
+Reach out for donation and community-support information.
 </p>
 
-<div class="hero-buttons">
+</div>
 
-<a class="btn btn-primary" href="https://wa.me/917426021404" target="_blank">
-WhatsApp Us
-</a>
 
-<a class="btn btn-light" href="mailto:justkindnesswelfare@gmail.com">
-Email Us
-</a>
+<div class="contactGrid">
+
+<div class="contactCard">
+
+<div class="contactRow">
+
+<strong>Email</strong>
+
+<span>
+justkindnesswelfare@gmail.com
+</span>
+
+</div>
+
+
+<div class="contactRow">
+
+<strong>Phone / WhatsApp</strong>
+
+<span>
+7426021404
+</span>
 
 </div>
 
 </div>
 
 
-<div class="contact-info">
+<div class="contactCard">
 
-<div class="contact-row">
-<strong>📍 Address</strong>
-<span>Narayan Vihar, Jaipur, Rajasthan</span>
-</div>
+<div class="contactRow">
 
-<div class="contact-row">
-<strong>📞 Phone / WhatsApp</strong>
-<span>7426021404</span>
-</div>
+<strong>Address</strong>
 
-<div class="contact-row">
-<strong>✉️ Email</strong>
-<span>justkindnesswelfare@gmail.com</span>
-</div>
-
-<div class="contact-row">
-<strong>🆔 Udyam Registration</strong>
-<span>UDYAM-RJ-17-0681301</span>
-</div>
+<span>
+Narayan Vihar, Jaipur, Rajasthan
+</span>
 
 </div>
 
+
+<div class="contactRow">
+
+<strong>UPI ID</strong>
+
+<span>
+7426021404@ptsbi
+</span>
+
 </div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+</main>
 
 
 <!-- FOOTER -->
 
 <footer>
+
 <div class="container">
 
-<div class="footer-grid">
+<div class="footerGrid">
 
 <div>
-<h3>JUST KINDNESS WELFARE</h3>
-<div class="footer-small">Every act of kindness matters. ❤️</div>
+
+<h3>
+JUST KINDNESS WELFARE
+</h3>
+
+<div class="small">
+Kindness • Care • Hope
 </div>
 
-<div class="footer-small">
-Narayan Vihar, Jaipur, Rajasthan<br>
-7426021404<br>
-justkindnesswelfare@gmail.com
+</div>
+
+<div class="small">
+NARAYAN VIHAR, JAIPUR, RAJASTHAN
 </div>
 
 </div>
+
 
 <div class="copyright">
-© <span id="year"></span> JUST KINDNESS WELFARE. All rights reserved.
+
+© 2026 JUST KINDNESS WELFARE. All rights reserved.
+
 </div>
 
 </div>
+
 </footer>
 
 
-<a href="#donate" class="floating-donate">♥ Donate</a>
+<!-- IMAGE MODAL -->
+
+<div class="modal"
+id="imgModal"
+onclick="closeImg()">
+
+<div class="close">
+×
+</div>
+
+<img id="modalImg"
+src=""
+alt="Gallery preview"
+onclick="event.stopPropagation()">
+
+</div>
 
 
-<!-- IMAGE POPUP -->
+<!-- PAYMENT MODAL -->
 
-<div class="modal" id="modal" onclick="closeImage()">
+<div class="payModal"
+id="payModal">
 
-<div class="close">×</div>
+<div class="payPanel">
 
-<img id="modalImage" alt="Gallery image">
+<button class="payClose"
+onclick="closePayment()">
+×
+</button>
+
+
+<div class="payTitle">
+Choose a payment method
+</div>
+
+<div class="paySub">
+Pay using your preferred UPI app.
+</div>
+
+
+<!-- AMOUNT -->
+
+<div class="amountBox">
+
+<label>
+DONATION AMOUNT
+</label>
+
+<div class="amountRow">
+
+<span>₹</span>
+
+<input
+id="amount"
+type="number"
+min="1"
+step="1"
+value="100"
+inputmode="decimal">
+
+</div>
+
+</div>
+
+
+<div class="payMethodsTitle">
+Pay directly with
+</div>
+
+
+<!-- PAYTM -->
+
+<button class="method"
+onclick="payWith('paytm')">
+
+<div class="appIcon paytm">
+P
+</div>
+
+<div class="methodText">
+
+<strong>
+Paytm
+</strong>
+
+<span>
+Open Paytm payment screen
+</span>
+
+</div>
+
+</button>
+
+
+<!-- PHONEPE -->
+
+<button class="method"
+onclick="payWith('phonepe')">
+
+<div class="appIcon phonepe">
+पे
+</div>
+
+<div class="methodText">
+
+<strong>
+PhonePe
+</strong>
+
+<span>
+Open PhonePe payment screen
+</span>
+
+</div>
+
+</button>
+
+
+<!-- GOOGLE PAY -->
+
+<button class="method"
+onclick="payWith('gpay')">
+
+<div class="appIcon gpay">
+G
+</div>
+
+<div class="methodText">
+
+<strong>
+Google Pay
+</strong>
+
+<span>
+Open Google Pay payment screen
+</span>
+
+</div>
+
+</button>
+
+
+<!-- OTHER UPI -->
+
+<button class="method"
+onclick="payWith('upi')">
+
+<div class="appIcon upiicon">
+↗
+</div>
+
+<div class="methodText">
+
+<strong>
+Other UPI App
+</strong>
+
+<span>
+Open your device's UPI payment chooser
+</span>
+
+</div>
+
+</button>
+
+
+<div class="payMethodsTitle">
+Can't open an app?
+</div>
+
+
+<!-- QR BUTTON -->
+
+<button
+class="btn primary"
+style="width:100%"
+onclick="showQR()">
+
+📷 Pay with QR
+
+</button>
+
+
+<!-- QR AREA -->
+
+<div
+class="qrArea"
+id="qrArea">
+
+<strong>
+Scan this QR with another phone
+</strong>
+
+
+<img
+class="qrPay"
+src="qr.png"
+alt="UPI QR for 7426021404@ptsbi">
+
+
+<div class="qrHint">
+
+You can also save this QR
+and use it in a supported UPI app.
+
+</div>
+
+
+<div class="copyLine">
+7426021404@ptsbi
+</div>
+
+
+<div class="qrButtons">
+
+<button
+class="tinyBtn"
+onclick="copyUPI()">
+
+Copy UPI ID
+
+</button>
+
+
+<a
+class="tinyBtn"
+href="qr.png"
+download="just-kindness-upi-qr.png">
+
+Save QR
+
+</a>
+
+
+<button
+class="tinyBtn"
+onclick="openGenericUPI()">
+
+Try UPI App
+
+</button>
+
+</div>
+
+
+<div class="warning">
+
+Before paying, verify that the recipient shown
+by your UPI app is the intended recipient.
+
+</div>
+
+</div>
+
+
+<div
+class="status"
+id="payStatus">
+
+Opening your payment app…
+
+</div>
+
+</div>
 
 </div>
 
 
 <script>
 
-document.getElementById("year").innerText = new Date().getFullYear();
+/* =========================
+   UPI DETAILS
+========================= */
+
+const UPI_ID = "7426021404@ptsbi";
+
+const UPI_NAME = "JUST KINDNESS WELFARE";
+
+
+/* =========================
+   MOBILE MENU
+========================= */
 
 function toggleMenu(){
-    document.getElementById("navLinks").classList.toggle("open");
+
+  const links =
+  document.querySelector('.links');
+
+  if(links.style.display === 'flex'){
+
+    links.style.display = 'none';
+
+  }else{
+
+    links.style.display = 'flex';
+
+    links.style.position = 'absolute';
+    links.style.top = '72px';
+    links.style.left = '0';
+    links.style.right = '0';
+    links.style.background = '#fff';
+    links.style.padding = '18px 6%';
+    links.style.flexDirection = 'column';
+    links.style.gap = '15px';
+
+  }
+
 }
 
-function openImage(src){
-    document.getElementById("modalImage").src = src;
-    document.getElementById("modal").classList.add("show");
+
+/* =========================
+   PAYMENT AMOUNT
+========================= */
+
+function getAmount(){
+
+  const n =
+  parseFloat(
+    document.getElementById("amount").value
+  );
+
+  if(!Number.isFinite(n) || n <= 0){
+
+    alert("Please enter a valid donation amount.");
+
+    return null;
+
+  }
+
+  return n.toFixed(2);
+
 }
 
-function closeImage(){
-    document.getElementById("modal").classList.remove("show");
+
+/* =========================
+   STANDARD UPI LINK
+========================= */
+
+function makeUPI(amount){
+
+  return "upi://pay?pa="
+  + encodeURIComponent(UPI_ID)
+  + "&pn="
+  + encodeURIComponent(UPI_NAME)
+  + "&am="
+  + encodeURIComponent(amount)
+  + "&cu=INR";
+
 }
 
-document.addEventListener("keydown",function(e){
-    if(e.key === "Escape"){
-        closeImage();
+
+/* =========================
+   APP-SPECIFIC LINKS
+========================= */
+
+function makeAppLink(app,amount){
+
+  const query =
+  "?pa="
+  + encodeURIComponent(UPI_ID)
+  + "&pn="
+  + encodeURIComponent(UPI_NAME)
+  + "&am="
+  + encodeURIComponent(amount)
+  + "&cu=INR";
+
+
+  if(app === "paytm"){
+
+    return "paytmmp://pay" + query;
+
+  }
+
+
+  if(app === "phonepe"){
+
+    return "phonepe://pay" + query;
+
+  }
+
+
+  if(app === "gpay"){
+
+    return "tez://upi/pay" + query;
+
+  }
+
+
+  return makeUPI(amount);
+
+}
+
+
+/* =========================
+   DIRECT PAYMENT
+========================= */
+
+function payWith(app){
+
+  const amount = getAmount();
+
+  if(!amount){
+    return;
+  }
+
+
+  const status =
+  document.getElementById("payStatus");
+
+  status.classList.add("show");
+
+  status.textContent =
+  "Opening payment app…";
+
+
+  const target =
+  makeAppLink(app,amount);
+
+  const fallback =
+  makeUPI(amount);
+
+
+  let hidden = false;
+
+
+  const onHide = () => {
+
+    hidden = true;
+
+  };
+
+
+  document.addEventListener(
+    "visibilitychange",
+    onHide,
+    {once:true}
+  );
+
+
+  /* Try selected app */
+
+  window.location.href = target;
+
+
+  /* Fallback to standard UPI */
+
+  setTimeout(function(){
+
+    if(!hidden){
+
+      status.textContent =
+      "Trying standard UPI payment…";
+
+      window.location.href =
+      fallback;
+
+
+      setTimeout(function(){
+
+        status.textContent =
+        "If nothing opened, use Pay with QR below.";
+
+      },1400);
+
     }
-});
 
-function donateAmount(amount){
+  },1200);
 
-    let upi =
-    "upi://pay?pa=7426021404@ptsbi" +
-    "&pn=JUST%20KINDNESS%20WELFARE" +
-    "&am=" + amount +
-    "&cu=INR";
-
-    window.location.href = upi;
 }
+
+
+/* =========================
+   GENERIC UPI
+========================= */
+
+function openGenericUPI(){
+
+  const amount =
+  getAmount() || "100.00";
+
+  window.location.href =
+  makeUPI(amount);
+
+}
+
+
+/* =========================
+   PAYMENT MODAL
+========================= */
+
+function openPayment(){
+
+  document
+  .getElementById("payModal")
+  .classList.add("show");
+
+  document.body.style.overflow =
+  "hidden";
+
+}
+
+
+function closePayment(){
+
+  document
+  .getElementById("payModal")
+  .classList.remove("show");
+
+  document.body.style.overflow =
+  "";
+
+}
+
+
+/* =========================
+   SHOW QR
+========================= */
+
+function showQR(){
+
+  const qr =
+  document.getElementById("qrArea");
+
+  qr.classList.add("show");
+
+  qr.scrollIntoView({
+
+    behavior:"smooth",
+
+    block:"nearest"
+
+  });
+
+}
+
+
+/* =========================
+   COPY UPI ID
+========================= */
+
+async function copyUPI(){
+
+  try{
+
+    await navigator.clipboard.writeText(
+      UPI_ID
+    );
+
+    alert(
+      "UPI ID copied: " + UPI_ID
+    );
+
+  }catch(e){
+
+    prompt(
+      "Copy this UPI ID:",
+      UPI_ID
+    );
+
+  }
+
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+function openImg(src){
+
+  document
+  .getElementById("modalImg")
+  .src = src;
+
+  document
+  .getElementById("imgModal")
+  .classList.add("show");
+
+}
+
+
+function closeImg(){
+
+  document
+  .getElementById("imgModal")
+  .classList.remove("show");
+
+}
+
+
+/* =========================
+   CLOSE PAYMENT ON BACKGROUND
+========================= */
+
+document
+.getElementById("payModal")
+.addEventListener(
+  "click",
+  function(e){
+
+    if(e.target === this){
+
+      closePayment();
+
+    }
+
+  }
+);
 
 </script>
 
